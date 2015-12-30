@@ -1,6 +1,8 @@
-# atom-remove-keybindings-collisions package
+# Remove Keybindings Collisions package
 
-Allows you to remove those keybindings from other packages that starts like yours or share the same keystrokes.
+Allows you to remove those keybindings from other packages that collides with your own keystrokes.
 
 ## Usage
-If you select the 'Exact Keystrokes' it will remove only those keystrokes that are identically but if you leave the checkbox unchecked it will match partial keystrokes. For example it will match yours 'ctrl-k j' with the keystroke 'ctrl-k ctrl-l' from other package. This increases the performance when Atom it is looking for similar keystrokes.
+It has two modes. If you check the 'Exact Keystrokes' checkbox it will only remove those keystrokes that have an exact match. If not it will remove also partial match. In this mode it will remove those keystrokes that share the same beginning for example if you have 'ctrk-k j' it will remove 'ctrl-k ctrk-l'.
+
+Also, at least in Linux, this helps to improve the performance when defining a keybinding with a keystroke which beginning is in others keybindings.
